@@ -1,0 +1,24 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:converters="clr-namespace:SmartRecipe.Wpf.Converters">
+
+    <!-- 👀 Boolean Converters -->
+    <converters:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter" />
+    <converters:InverseBoolToVisibilityConverter x:Key="InverseBoolToVisibilityConverter" />
+    <converters:InverseBooleanConverter x:Key="InverseBooleanConverter"/>
+
+    <!-- 🛑 Null / Empty Handling -->
+    <converters:NullToVisibilityConverter x:Key="NullToVisibilityConverter" />
+    <converters:StringToVisibilityConverter x:Key="StringToVisibilityConverter" />
+    <converters:CountToVisibilityConverter x:Key="CountToVisibilityConverter" />
+
+    <!-- 🔄 Other Conversions -->
+    <converters:CategoryToStringConverter x:Key="CategoryToStringConverter" />
+    <converters:LikeToEmojiConverter x:Key="LikeToEmojiConverter" />
+    <converters:FilePathToNameConverter x:Key="FilePathToNameConverter" />
+
+    <!-- New converters for enhanced recipe view -->
+    <converters:StringContainsConverter x:Key="StringContainsConverter"/>
+    <converters:CleanDescriptionConverter x:Key="CleanDescriptionConverter"/>
+
+</ResourceDictionary>
